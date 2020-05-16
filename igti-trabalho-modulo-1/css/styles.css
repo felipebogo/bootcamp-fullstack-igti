@@ -27,7 +27,8 @@ h1{
 }
 
 .grp-cor label{
-  width: 100px;
+  width: 160px;
+  font-weight: 600;
 }
 
 .grp-cor input[type=range]{
