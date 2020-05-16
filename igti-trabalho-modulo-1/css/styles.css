@@ -1,0 +1,47 @@
+body{
+  padding:40px;
+}
+
+h1{
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.container{
+  display:  flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 500px;
+}
+
+.grp-cor{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.grp-cor + .grp-cor{
+  margin-top: 10px;
+}
+
+.grp-cor label{
+  width: 100px;
+}
+
+.grp-cor input[type=range]{
+  width: 100vh;
+}
+
+.grp-cor input[type=text]{
+  width: 30px;
+}
+
+#box-result{
+  width:200px;
+  height: 200px;
+  border: solid 1px #000;
+  margin-top: 20px;
+
+}
