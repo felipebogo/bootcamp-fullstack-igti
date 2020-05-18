@@ -1,7 +1,7 @@
 'use strict';
 
 window.addEventListener('load', () => {
-  const users = [];
+  let users = [];
   let filteredUsers = [];
   const estatisticas = {};
   let searchExecuted = false;
@@ -22,9 +22,9 @@ window.addEventListener('load', () => {
   const loadUsers = async () => {
     const responseBin = await fetch('https://randomuser.me/api/?seed=javascript&results=100&nat=BR&noinfo');
     const response = await responseBin.json();
-    response.results.forEach(user => {
+    users = response.results.map(user => {
       const { name, picture, dob, gender } = user;
-      users.push({ fullName: name.first + ' ' + name.last, pictureUrl: picture.large, gender, age: dob.age, date: dob.date });
+      return { fullName: name.first + ' ' + name.last, pictureUrl: picture.large, gender, age: dob.ageg }
     });
   }
 
