@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding:0;
+  outline:0;
+  box-sizing:border-box;
+  font-size: 1rem;
+}
+
+body{
+  -webkit-font-smoothing: antialiased;
+  font-family: sans-serif;
+  background-color: #FFF;
+}
+
+.container{
+  padding: 40px;
+  width:100%;
+  display:flex;
+  flex-direction: column;
+}
+
+h1{
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  font-weight: 600;
+  color: #444;
+}
+
+.search{
+  display: flex;
+  margin-bottom: 10px;
+  align-items: center;
+}
+
+.search input{
+  padding: 0px 10px;
+  border-radius: 6px 0px 0px 6px;
+  width: 100%;
+  height: 40px;
+  border: 1px solid #DCDCDC;
+  border-right: none;
+  color: #444;
+  margin-bottom: 0px !important;
+  
+}
+
+.search button{
+  border-radius: 0px 6px 6px 0px;
+  padding: 0px 20px;
+  font-weight: 700;
+  border: 1px solid #DCDCDC;
+  border-left: none;
+  height: 40px;
+  cursor: pointer;
+  color: #444;
+}
+
+.search button:hover {
+  background-color: rgb(220,220,220,0.6)
+}
+
+.frames{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+@media (max-width: 600px) {
+  .frames{
+    flex-direction: column;
+  }
+}
+
+h2{
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.frame-info{
+  border: 1px solid #DCDCDC;
+  border-radius: 6px;
+  padding: 10px;
+  width: 100%;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+@media (max-width: 600px) {
+  .frame-info{
+    max-height: none;
+    overflow-y: auto;
+  }
+  
+  .frame-info + .frame-info{
+    margin-top: 10px;
+    margin-left: 0px;
+  }
+}
+
+#users li {
+  display: flex;
+  align-items: center;
+  height: 65px;
+  /* margin-bottom: 4px; */
+}
+
+#users li img{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.frame-info + .frame-info{
+  margin-left: 5px;
+}
+
+.span-msg{
+  border: 1px solid #DCDCDC;
+  border-radius: 6px;
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+  display: block;
+  font-weight: 600;
+  color:  #444
+}
+
+.invisible{
+  display:none;
+}
+
+.statistics h3 span:first-child{
+  width:130px;
+  display: inline-block;
+}
+
+.span-value{
+  font-weight: 600;
+}
+

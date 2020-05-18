@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desafio Módulo 1</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Pesquisa de usuários</h1>
+    <div class="search">
+      <input id="search-input" placeholder="Digite um nome para buscar">
+      <button id="search-btn">Buscar</button>
+    </div>
+    <div id="frames" class="frames invisible">
+      <div class="frame-info" id="users">
+        <h2><span id="total-found">0</span> usuário(s) encontrado(s)</h2>
+        <ul id="user-list">
+        </ul>
+      </div>
+      <div class="frame-info statistics" id="statistics">
+        <h2>Estatísticas</h2>
+        <h3><span>Sexo masculino:</span> <span class="span-value" id="span-male">0</span></h3>
+        <h3><span>Sexo feminino:</span> <span class="span-value" id="span-female">0</span></h3>
+        <h3><span>Soma das idades:</span> <span class="span-value" id="span-count-ages">0</span></h3>
+        <h3><span>Média das idades:</span> <span class="span-value" id="span-average-ages">0</span></h3>
+      </div>
+    </div>
+    <span class="span-msg" id="no-filter">Nenhum usuário filtrado</span>
+    <span class="span-msg invisible" id="nothing-found">Nada a ser exibido</span>
+  </div>
+  <script src="./js/scripts.js"></script>
+</body>
+
+</html>
