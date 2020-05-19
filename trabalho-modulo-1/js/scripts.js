@@ -22,7 +22,7 @@ function init() {
 
   var ranges = document.querySelectorAll('input[type=range]');
   ranges.forEach(range => {
-    range.addEventListener('change', rangeHandler);
+    range.addEventListener('input', rangeHandler);
     setText(range);
   });
   drawBoxResult();
