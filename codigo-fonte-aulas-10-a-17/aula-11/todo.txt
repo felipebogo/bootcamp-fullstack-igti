@@ -1,0 +1,14 @@
+Check ✓
+
+(✓) Utilizar o arquivo people.js
+(✓) Exemplificar:
+  (✓) map      (transformar array em objeto com nome e email)
+  (✓) filter   (maiores de 18 anos)
+  (✓) forEach  (incluir nova propriedade no objeto)
+  (✓) reduce   (somar idades)
+  (✓) find     (primeiro usuário de Minas Gerais)
+  (✓) some     (usuários de Amazonas)
+  (✓) every    (nat = 'BR')
+  (✓) sort     (ordenar por nome e idade ASC e DESC)
+
+
