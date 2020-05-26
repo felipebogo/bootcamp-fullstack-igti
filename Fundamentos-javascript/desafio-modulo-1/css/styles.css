@@ -59,6 +59,18 @@ h1{
   background-color: rgb(220,220,220,0.6)
 }
 
+.search .btn-search-disabled{
+  background-color: #999;
+  cursor: not-allowed;
+  color: #777;
+}
+
+.search .btn-search-disabled:hover{
+  background-color: #999;
+}
+
+
+
 .frames{
   display: flex;
   flex-direction: row;
@@ -138,4 +150,3 @@ h2{
 .span-value{
   font-weight: 600;
 }
-

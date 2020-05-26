@@ -8,6 +8,7 @@ window.addEventListener('load', () => {
   // dom elements
   const userList = document.querySelector("#user-list");
   const inputSearch = document.querySelector('#search-input');
+  const buttonSearch = document.querySelector('#search-btn');
   const spanNoFilter = document.querySelector('#no-filter');
   const spanNothingFound = document.querySelector('#nothing-found');
   const spanTotalFound = document.querySelector('#total-found');
@@ -29,6 +30,7 @@ window.addEventListener('load', () => {
   }
 
   const onSearch = () => {
+    console.log("disparou");
     if (inputSearch.value.length > 0) {
       searchExecuted = true
       filteredUsers = users.filter((user) => user.fullName.toLowerCase().includes(inputSearch.value.toLowerCase()));
@@ -37,7 +39,20 @@ window.addEventListener('load', () => {
     }
   }
 
+  const controlButtonSearch = () =>{
+    if (inputSearch.value.length > 0) {
+      buttonSearch.removeAttribute('disabled');
+      buttonSearch.classList.remove('btn-search-disabled');
+      
+    }else{
+      buttonSearch.setAttribute('disabled', '');
+      buttonSearch.classList.add('btn-search-disabled');
+    }
+  }
+
   const onInputEnterKey = (ev) => {
+    controlButtonSearch();
+
     if (ev.key === 'Enter' || ev.code === 'Enter') {
       onSearch();
     }
@@ -106,6 +121,7 @@ window.addEventListener('load', () => {
     renderFrames();
   };
 
+  controlButtonSearch();
   loadEvents();
   loadUsers();
   render();
