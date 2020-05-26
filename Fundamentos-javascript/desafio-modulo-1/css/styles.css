@@ -97,6 +97,10 @@ h2{
   overflow-y: auto;
 }
 
+.frame-info + .frame-info{
+  margin-left: 5px;
+}
+
 @media (max-width: 600px) {
   .frame-info{
     max-height: none;
@@ -121,10 +125,6 @@ h2{
   height: 60px;
   border-radius: 50%;
   margin-right: 10px;
-}
-
-.frame-info + .frame-info{
-  margin-left: 5px;
 }
 
 .span-msg{
