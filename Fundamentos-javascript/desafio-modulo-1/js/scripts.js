@@ -25,7 +25,7 @@ window.addEventListener('load', () => {
     const response = await responseBin.json();
     users = response.results.map(user => {
       const { name, picture, dob, gender } = user;
-      return { fullName: name.first + ' ' + name.last, pictureUrl: picture.large, gender, age: dob.ageg }
+      return { fullName: name.first + ' ' + name.last, pictureUrl: picture.large, gender, age: dob.age }
     });
   }
 
