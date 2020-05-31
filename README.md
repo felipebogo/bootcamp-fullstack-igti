@@ -1,3 +1,3 @@
 # bootcamp FullStack igti
 
-Tarefas desenvolvidas durnte o bootcamp FullStack do IGTI
+Tarefas desenvolvidas durante o bootcamp FullStack do IGTI
