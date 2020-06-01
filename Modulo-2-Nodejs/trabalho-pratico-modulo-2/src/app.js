@@ -37,15 +37,16 @@ representado no arquivo Estados.json, e o seu conteúdo será um array das cidad
  pertencentes aquele estado, de acordo com o arquivo Cidades.json. O nome do 
  arquivo deve ser o UF do estado, por exemplo: MG.json.
 */
-const fileToStates = () => {
-  statesList.forEach(({ ID, Sigla }) => {
+const createStateFiles = async() => {
+  const statePromises = statesList.map(({ ID, Sigla }) => {
     loadedStates.push(Sigla);
     const stateCities = citiesList.filter(city => city.Estado === ID).
       map(({ ID, Nome }) => {
         return { ID, Nome }
       });
-    fs.writeFileSync(`./src/assets/states/${Sigla}.json`, JSON.stringify(stateCities));
+    return fs.promises.writeFile(`./src/assets/states/${Sigla}.json`, JSON.stringify(stateCities));
   });
+  await Promise.all(statePromises);
 };
 
 /* 
@@ -188,7 +189,7 @@ const printSmallestCity = () => {
 
 const runApp = async () => {
   await load();
-  fileToStates();
+  await createStateFiles();
   await loadStates();
   printStatesWithMoreCities();
   printStatesWithLessCities();
