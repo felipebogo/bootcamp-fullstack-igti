@@ -1,0 +1,16 @@
+{
+  "name": "trabalho-pratico-modulo-2",
+  "version": "1.0.0",
+  "description": "trabalho pratico modulo 1",
+  "main": "--experimental-modules ./src/app.js",
+  "scripts": {
+    "start": "nodemon --experimental-modules ./src/app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  },
+  "dependencies": {}
+}

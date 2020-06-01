@@ -1,13 +1,16 @@
+'use strict';
 import express from 'express';
 import routes from './routes.js';
 import logger from './logger.js'
-import winston from 'winston';
 
 
 const app = express()
 app.use(express.json());
 const port = 3000;
 
+
+ app.use(express.static('public'));
+app.use('/images',express.static('public'));
 app.use(routes);
 
 
