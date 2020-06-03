@@ -13,6 +13,15 @@
       ],
       "program": "${workspaceFolder}/src/app.js",
       "runtimeArgs": ["--experimental-modules"]
+    },
+    {
+      "type": "node",
+      "request": "attach",
+      "restart": true,
+      "name": "Attach Node",
+      "skipFiles": [
+        "<node_internals>/**"
+      ]
     }
   ]
 }

@@ -1,18 +1,18 @@
 import express from 'express';
 
-const routes = express.Router();
+const testesRoute = express.Router();
 
-routes.use((_req, _res,next) => {
+testesRoute.use((_req, _res,next) => {
   console.log('executou midleware');
   next();
 });
 
-routes.use('/',(_req, _res,next) => {
+testesRoute.use('/',(_req, _res,next) => {
   console.log('executou midleware na rota root');
   next();
 });
 
-routes.get('/', (req, res) => {
+testesRoute.get('/', (req, res) => {
   res.send("hello World 2");
 });
 
@@ -25,17 +25,17 @@ const call2 = (_req, res) => {
   res.end();
 };
 
-routes.get('/multicall', [call1, call2]);
+testesRoute.get('/multicall', [call1, call2]);
 
-routes.all('/all', (req, res) => {
+testesRoute.all('/all', (req, res) => {
   res.send(req.method);
 });
 
-routes.get('/urlParam/:a/:b', (req, res) => {
+testesRoute.get('/urlParam/:a/:b', (req, res) => {
   res.send(`parametros: ${req.params.a},${req.params.b}`);
 });
 
-routes.route('/route').get((_req, res) => {
+testesRoute.route('/route').get((_req, res) => {
   res.send('route get');
 }
 ).post((_req, res) => {
@@ -43,4 +43,4 @@ routes.route('/route').get((_req, res) => {
 })  ;
 
 
-export default routes;
+export default testesRoute;
