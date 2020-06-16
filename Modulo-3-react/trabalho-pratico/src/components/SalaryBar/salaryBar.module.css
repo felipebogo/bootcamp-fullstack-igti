@@ -1,0 +1,4 @@
+.flexColBar{
+  display: flex;
+  flex-direction: row;
+}
