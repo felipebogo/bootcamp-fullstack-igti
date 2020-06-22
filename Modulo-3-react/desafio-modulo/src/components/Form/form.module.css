@@ -16,7 +16,7 @@
 }
 
 .errors{
-  border: 1px solid "#d63031";
+  border: 1px solid transparent;
   background: #fab1a0;
   display: flex;
   flex-direction: column;
