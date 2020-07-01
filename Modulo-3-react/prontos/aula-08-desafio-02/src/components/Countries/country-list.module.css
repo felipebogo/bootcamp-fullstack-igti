@@ -1,0 +1,21 @@
+.clickableItem {
+  cursor: pointer;
+}
+
+.liContainer {
+  width: 200px;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+}
+
+.ulContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+
+  padding: 20px;
+}

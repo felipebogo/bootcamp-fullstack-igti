@@ -1,0 +1,17 @@
+Aula 07 - roteiro - ✔ 
+=====================
+
+() Criar projeto a partir do projeto base
+() Em App.js, colocar console.log em componentDidMount, componentDidUpdate e componentWillUnmount
+() Em App.js, criar estado com um vetor de users [] e boolean showUsers false
+() Em componentDidMount de App.js, preencher vetor de users com fetch de https://randomuser.me/api/?seed=rush&nat=br&results=10
+() No render de App.js, mostrar botão para exibir users conforme valor de showUsers
+() Criar componente Users
+() Listar usuários através de props de forma simples, por enquanto
+() Em Users.js colocar console.log em componentDidMount, componentDidUpdate e componentWillUnmount
+() Em Users.js, criar estado para indicar por quantos segundos o componente está visível em tela (ex: secondsVisible: 0)
+() Em Users.js, criar atributo this.interval no construtor
+() Em Users.js, componentDidMount, ativar interval de 1 segundo para incrementar secondsVisible
+() Ao executar a aplicação, clicar no botão para esconder novamente os usuários e verificar componentWillUnmount de Users
+() Corrigir erro com clearTimeout.
+() Estilizar app.

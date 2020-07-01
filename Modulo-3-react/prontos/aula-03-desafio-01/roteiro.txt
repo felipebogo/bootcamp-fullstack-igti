@@ -1,0 +1,58 @@
+Desafio 01 - Roteiro - ✔
+========================
+
+JavaScript não-performático
+---------------------------
+
+() Criar estrutura de pastas com index.html e 
+   pasta ./js com script.js
+() Modificar título de index.html 
+() Certificar que extensão Live Server está instalada.
+() Executar Live Server e testar mudanças
+() Montar HTML com botão e lista não ordenada vazia dentro de div
+() Montar JavaScript com window.addEventListener
+() Criar estado da aplicação com array de cliques.
+() Implementar clique do botão de forma que toda a ul/li seja preenchida
+   novamente.
+() Implementar função para formatar data/hora em arquivo isolado,
+   referenciar arquivo antes de script.js e utilizá-la ao preencher 'li'.
+() Implementar função para mostrar em document.title a quantidade de cliques 
+   no botão.
+() Mostrar no Chrome Dev Tools que tudo é recriado.
+
+
+JavaScript performático
+-----------------------
+
+() Reaproveitar projeto anterior
+() Modificar título de index.html 
+() Modificar implementação do clique do botão de forma que 
+   seja inserida uma nova li a cada clique.
+() Mostrar no Chrome Dev Tools que somente a nova li é criada,
+   provando que o app é mais performático.
+
+
+React com Class Components
+--------------------------
+
+() Utilizar _react-projeto-base 
+() Transformar App.js em Class Component
+() Definir this.state 
+() Reaproveitar função para transformação de data/hora no formato import/export
+() Implementar render()
+() Implementar clique no botão com método handleClick
+() Implementar componentDidUpdate para atualizar document.title com a
+   quantidade de cliques.
+
+
+React com Hooks
+---------------
+
+() Utilizar _react-projeto-base 
+() Definir estado com useState  
+() Reaproveitar função para transformação de data/hora no formato import/export
+() Implementar renderização do componente 
+() Implementar clique no botão com closure handleClick
+() Implementar useEffect para atualizar document.title com a
+   quantidade de cliques.
+

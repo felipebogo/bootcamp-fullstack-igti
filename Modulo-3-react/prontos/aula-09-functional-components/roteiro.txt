@@ -1,0 +1,25 @@
+Aula 09 - roteiro - ✔ 
+=====================
+
+() Frisar que Functional Components não guardam estado (por enquanto)
+() A utilização dos dados é feita através de props
+() Não há mais o conceito de "this" nem de "this.setState()"
+() Não há mais lifecycle methods
+() Métodos de classe passam a ser funções
+() Converter Class Components em Functional Components
+
+() react-counter-02-functional 
+   () Converter componente App
+   () Converter componente CounterButton
+
+() react-lifecycle-functional 
+   () Converter componente Toggle
+   () Converter componente Avatar
+   () Converter componente Item
+
+() react-desafio-02-functional 
+   () Converter componente CountryList
+   () Converter componente CountryItem
+
+() Modificar os functional components acima 
+   para utilizar "props destructuring"

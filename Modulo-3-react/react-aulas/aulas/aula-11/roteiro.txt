@@ -1,0 +1,21 @@
+Aula 11 - roteiro - ✔ 
+=====================
+
+() Converter Class Components em 
+   Functional Components com Hooks
+
+(✔) react-counter-02-hooks 
+   (✔) Converter componente Band
+   (✔) Converter componente Counter
+   (✔) Converter componente App
+
+(✔) react-lifecycle-hooks 
+   (✔) Converter componente Users
+   (✔) Converter componente App
+
+(✔) react-desafio-02-hooks 
+   (✔) Converter componente App
+
+() react-desafio-03-hooks - frontend
+   () Converter componente App
+

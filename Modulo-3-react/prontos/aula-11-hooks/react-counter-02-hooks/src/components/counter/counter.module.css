@@ -1,0 +1,20 @@
+.counterContainer {
+  padding: 10px;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.counterValue {
+  padding: 10px;
+  font-size: 1.2rem;
+  font-family: Consolas, monospace;
+}
+
+.steps {
+  padding: 10px;
+  font-size: 1.2rem;
+  font-family: Consolas, monospace;
+  color: darkgreen;
+  font-weight: bold;
+}

@@ -1,0 +1,26 @@
+Trabalho Prático - roteiro ✔
+============================
+
+(✔) Demonstrar arquivo salary.js, implementado
+   conforme regras de:
+   https://www.todacarreira.com/calculo-salario-liquido/
+
+   
+(✔) Em App.js, criar state com fullSalary = 1000
+
+(✔) Implementar os seguintes componentes:
+   (✔) InputFullSalary, do tipo number, valor mínimo
+      de 1000 e step 100. Evento para onChange, que
+      vai invocar handleSalaryChange de App.js.
+
+   (✔) InputReadOnly, do tipo text, que vai receber 
+      os demais dados do salário com formatação
+      para moeda, através de Intl.     
+
+   (✔) ProportionBar, que vai montar uma div com a proporção
+      de descontoINSS, descontoIRPF e salarioLiquido
+
+(✔) Em render():
+   (✔) Implementar chamada à função calculateSalaryFrom
+      e obter os dados
+   (✔) Montar a tela com os componentes criados. 

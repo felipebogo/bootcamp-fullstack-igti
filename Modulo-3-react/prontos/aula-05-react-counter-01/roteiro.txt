@@ -1,0 +1,44 @@
+react-counter-01 - roteiro - ✔ 
+==============================
+
+() Copiar projeto base e renomear para react-counter-01
+() Mudar título de index.html para React Counter 01
+() Mostrar classe App.js e explicar herança de Component 
+() Criar pasta 'components' 
+() Em components, criar arquivo Counter.js 
+() Criar classe Counter "na mão, do zero" exibindo apenas o texto 
+   "Counter" em um parágrafo
+() Excluir todo o texto e recriar classe Counter com "rcc + tab",
+   mostrando o poder da extensão
+() Explicar o conceito de import/export em projetos React
+() Modificar extends Component para extends React.Component e explicar 
+   o conceito de export default 
+() Em App.js, importar Counter e instanciar 3 componentes <Counter /> 
+() Em Counter.js, criar construtor() e explicar super(). 
+() Em seguinda, criar atributo this.currentCounter.
+() Exemplificar JSX.
+() Em Counter.js, modelar a classe dos botões com o apoio do css 
+  <button className="waves-effect waves-light btn red darken-4">
+() Criar arquivo counter.module.css na mesma pasta de Counter
+
+() No CSS, criar as seguintes classes CSS:
+
+    .counterContainer {
+      padding: 10px;
+    }
+
+    .counterValue {
+      padding: 10px;
+      font-size: 1.2rem;
+      font-family: Consolas, monospace;
+    }
+
+() Importar counter.module.css através de: import css from './counter.module.css';
+() Demonstrar utilização dessas classes em Counter e explicar interpolação com
+   chaves {}
+() Verificar no navegador que as classes são renomeadas para
+   garantir identidade única
+() Explicar que o exemplo ainda não está funcional, pois falta algo essencial ao
+   React: a utilização de state
+
+  

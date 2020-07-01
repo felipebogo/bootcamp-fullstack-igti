@@ -1,0 +1,32 @@
+Aula 06 - roteiro - ✔ 
+=====================
+
+Parte 01:
+---------
+() Reaproveitar projeto da aula05
+() Mudar título de index.html para React Counter 02
+() Instanciar this.state no construtor com o objeto: {currentCounter: 0, steps: 0}
+() Explicar que this.state não pode ser modificado diretamente
+() this.state deve ser modificado com this.setState()
+() Mostrar como utilizar this.setState() através de um setInterval, incrementando counter
+   e depois steps. Cancelar implementação em seguida.
+() Explicar que this.setState() não executa necessariamente a modificação imediatamente
+() Criar eventos onClick para os botões, incrementando ou decrementando state e incrementando
+   steps
+() Mostrar a melhor prática: referência no evento e arrow function na implementação
+() Quebrar <Counter> em 3 componentes <Button> <Value> e <Step>, utilizando props
+
+Parte 2:
+--------
+() Isolar estado do contador em App
+() Criar componente Counter2 a partir de Counter para utilizar props
+() Instanciar 3 <Counter2> em App
+() Verificar que os 3 componentes compartilham do mesmo estado
+
+Parte 3:
+--------
+() Explicar interpolação de arrays
+() Criar componente <Band> com o array members como estado, renderizando os
+   itens do array em uma <ul><li>, mostrando a importância de key
+
+

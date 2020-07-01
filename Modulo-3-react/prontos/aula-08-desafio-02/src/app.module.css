@@ -1,0 +1,17 @@
+.title {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.flexRow {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.leftRightSpace {
+  margin-left: 5px;
+  margin-right: 5px;
+}

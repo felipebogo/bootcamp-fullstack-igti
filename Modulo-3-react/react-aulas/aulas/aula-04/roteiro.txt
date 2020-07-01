@@ -1,0 +1,9 @@
+Classes com JavaScript - ✔
+==========================
+
+(✔) Criar classe mãe Animal com atributo
+   "name" e método "speak";
+(✔) Criar classes Cat e Dog com atributo 
+   "type", herdando de Animal
+(✔) Demonstrar utilização de objetos dessas
+   classes.

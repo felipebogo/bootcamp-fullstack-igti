@@ -1,0 +1,27 @@
+Desafio Final - roteiro ✓
+=========================
+
+(✓) Criar state com hooks em App.js
+   (✓) initialValue 1000
+   (✓) monthlyInterest 1
+   (✓) monthlyPeriod 1
+   (✓) installments []
+   
+(✓) Criar effect para calcular as parcelas na
+   função calculateInterest, com deps =
+   [initialValue, monthlyInterest, monthlyPeriod]
+   
+
+(✓) Implementar os seguintes componentes:
+
+   (✓) Form, com os 3 inputs do tipo number
+      recebendo os dados do estado de App.js
+      e invocando onChangeData, que por sua 
+      vez invoca handleFormChanges de App.js
+
+   (✓) Installments, que vai ser o container 
+      de Installment e receberá as parcelas   
+
+   (✓) Installment, que será renderizado para 
+      cada parcela
+

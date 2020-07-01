@@ -1,0 +1,153 @@
+Aula 12 - roteiro - ✔ 
+=====================
+
+Back End
+--------
+
+(✔) Estudar código-fonte do backend
+   (✔) Demonstrar função 'simulateGrades' de
+     app.js
+   (✔) Demonstrar linha 84 de app.js
+
+
+Front End
+---------
+
+(✔) Utilizar Projeto Base - yarn 
+(✔) Limpar componentes desnecessários do
+   projeto base
+
+(✔) Criar pasta 'api' e arquivo 'apiService.js',
+   contendo:
+   (✔) Utilização do pacote axios
+   (✔) Objeto API_URL
+   (✔) Objeto GRADE_VALIDATION
+
+   () Função assíncrona getAllGrades, que:
+     (✔) Traz todas notas da API
+     (✔) Transforma dados para facilitar
+       comparações, com valores lowercase
+     (✔) Inserir flag isDeleted
+     (✔) Verifica notas faltantes
+     (✔) Preenche as notas com os
+       registros faltantes com 0
+       e flag de exclusão lógica 
+       isDeleted = true
+     (✔) Insere as notas faltantes no
+       vetor de notas
+     (✔) Ordena por:
+       1) type
+       2) subject
+       3) student
+
+     (✔) Por fim, retorna as notas
+
+   (✔) Função assíncrona insertGrade, que
+     recebe uma nota, grava na API com
+     axios.post e retorna os dados
+     recebidos da API.
+
+   (✔) Função assíncrona updateGrade, que
+     recebe uma nota, grava na API com
+     axios.put e retorna os dados
+     recebidos da API.
+
+   (✔) Função assíncrona deleteGrade, que
+     recebe uma nota, grava na API com
+     axios.post e retorna os dados
+     recebidos da API.
+
+   (✔) Função getValidationFromGradeType,
+     que recebe um tipo de nota, busca
+     em GRADE_VALIDATION com array.find 
+     e retorna os dados de minValue e
+     maxValue
+
+  (✔) exporta as seguintes funções:
+    getAllGrades, insertGrade,
+    updateGrade, deleteGrade,
+    getValidationFromGradeType
+     
+
+App.js
+------
+
+(✔) Criar state para:
+   (✔) allGrades []
+   (✔) selectedGrade {}
+   (✔) isModalOpen false
+   
+(✔) Criar effect para:
+   (✔) Carga de dados da api []
+
+(✔) Criar título "Controle de notas"
+
+
+Componentes:
+------------
+
+(✔) Spinner a partir do Materialize
+   (✔) Testar em App.js
+   (✔) Deve ser exibido somente enquanto
+     'allGrades' estiver com 
+     length === 0
+
+(✔) GradesControl com as seguintes props:
+   (✔) grades => allGrades
+   (✔) onDeleteGrade => handleDeleteGrade em App.js
+   (✔) onPersistGrade => handlePersistGrade em App.js
+
+   (✔) Visível somente se 'allGrades' estiver
+     com length > 0
+
+   (✔) Criar array tableGrades, que será composta
+     de diversos arrays agrupados por nome e
+     disciplina.
+   (✔) Para isso, percorremos grades com forEach
+     e controlamos a mudança de subject e student
+
+   (✔) Montamos a tela percorrendo tableGrades,
+     gerando n tabelas
+
+   (✔) Isolamos as ações de inserção, edição e 
+     exclusão no componente Action
+
+   (✔) Funções importantes: handlePersist e
+     handleDelete, que invocarão as props
+     correspondentes que chegaram de App.js,
+     enviando a nota a ser persistida/excluída
+
+   (✔) Chavear a exibição de ícones de inserção,
+     edição e exclusão
+
+() ModalGrade
+   (✔) Visível apenas se "isModalOpen" for true
+   (✔) Props:
+     (✔) onSave => handlePersistData
+     (✔) onClose => handleCloseModal
+     (✔) selectedGrade => selectedGrade  
+
+     (✔) State:
+       (✔) gradeValue
+       (✔) gradeValidation
+       (✔) errorMessage
+
+     (✔) Effects:
+       (✔) Obter validação de apiService [type]
+       (✔) Validação da nota [gradeValue, gradeValidation]
+       (✔) EventListener de keydown, para monitorar a tecla "Esc",
+         que deve cancelar a persistência e fechar a modal
+
+     (✔) Montar modal a partir da biblioteca react-modal
+       (✔) Mostrar nome do aluno, disciplina e tipo de
+         avaliação com inputs 'readOnly'
+       (✔) Tornar o botão "Salvar" desabilitado caso a nota
+         esteja em um intervalo diferente do minValue e
+         maxValue, conforme gradeValidation
+    
+     (✔) Funções importantes:
+       (✔) handleKeyDown, para monitorar a tecla "Esc"
+       (✔) handleGradeChange, para persistir o valor da nota
+       (✔) handleModalClose, para fechar a modal sem persistência
+       (✔) handleFormSubmit, para obter os dados e persistir
+         a nota em App.js
