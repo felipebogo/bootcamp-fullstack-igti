@@ -3,3 +3,5 @@
 /**/*.log
 /**/assets/states/*.json
 /node_modules
+.env
+/**/.env

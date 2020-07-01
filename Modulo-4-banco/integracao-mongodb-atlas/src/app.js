@@ -3,8 +3,11 @@ import mongodb from 'mongodb';
 import mongoose from 'mongoose';
 import express from 'express';
 import routes from './routes/index.routes.js';
+import dotenv from 'dotenv';
 
-const uri = "mongodb+srv://admin:admin@bootcamp-igti-kmrzr.mongodb.net/grades?retryWrites=true&w=majority";
+dotenv.config();
+
+const uri = process.env.DB_URI;
 
 
 const appMongoDb = async () => {
